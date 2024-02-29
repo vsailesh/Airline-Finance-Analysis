@@ -1,20 +1,24 @@
 # Airline-Finance-Analysis
-# Orca Intelligence Assessment
-
-# Project 2: Airline Finances
 
 By examining regional and airline developments and engaging in critical discussions on significant industry factors, airline finance assesses financial patterns and the long-term prospects of the airline sector. The primary variable in our dataset is total revenue. In this study, various time series models were employed to predict future revenue. Graphs were plotted, and the performance errors of all models were compared to identify the model with the minimum error. Despite our initial hypothesis favoring ARIMA due to its reputed prediction capability in airline finance, the analysis revealed that SARIMA outperformed other models by yielding the least errors.
 
 **A.   Engineering features for time-series models**
 
-![Untitled](Orca%20Intelligence%20Assessment%20f20ad0059ea04ddc83a6eee7a6f49784/Untitled.png)
+![image](https://github.com/vsailesh/Airline-Finance-Analysis/assets/93115567/4bab25a7-a70f-4772-9949-051d39a3d219)
+
 
 The behavior of the raw data is shown in the first graph. Despite a decline after the first quarter of 2020, it has an increasing tendency overall.
 
 ### **STATIONARITY CHECK**
 
 **ACF (Autocorrelation function):** Autocorrelation implies that the series is dependent this occurs when a time series is highly correlated with the lagged version the longer the bars in the ACF plot the more dependent the series.
+
+![image](https://github.com/vsailesh/Airline-Finance-Analysis/assets/93115567/9c638d43-66ab-4368-864c-1f0446d0412d)
+
 **PACF (Partial Auto correlation Function):** ACF test is best method for Moving Average. However, this ACF test does not work well with the Auto regression model for this model we use the PACF test to determine the relationship between the current value of it time series and the lagged values controlling for other correlations.
+
+![image](https://github.com/vsailesh/Airline-Finance-Analysis/assets/93115567/7291dfca-bd07-4394-8edc-4b739877a239)
+
 ****
 
 ### **RESULTS**
@@ -31,9 +35,8 @@ The behavior of the raw data is shown in the first graph. Despite a decline afte
 
  **Table Above :** The fundamental goal of comparing these errors is to determine which model has less errors; the fewer errors, the better the model.
 
-![Untitled](Orca%20Intelligence%20Assessment%20f20ad0059ea04ddc83a6eee7a6f49784/Untitled%201.png)
-
-![Untitled](Orca%20Intelligence%20Assessment%20f20ad0059ea04ddc83a6eee7a6f49784/Untitled%202.png)
+![image](https://github.com/vsailesh/Airline-Finance-Analysis/assets/93115567/8d8a9353-5173-49f6-8ff5-6852db9c3c6e)
+![image](https://github.com/vsailesh/Airline-Finance-Analysis/assets/93115567/abaa5fbc-7207-47fc-90f6-8da4c9d1e9d0)
 
 ### Conclusion :
 
